@@ -1,0 +1,27 @@
+{
+    "name": "cnt-backend-plugin/cnt-backend-plugin",
+    "description": "cnt-backend-plugin/cnt-backend-plugin",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "CntBackendPlugin\\CntBackendPlugin",
+        "label": {
+            "de-DE": "Skeleton plugin",
+            "en-GB": "Skeleton plugin"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "CntBackendPlugin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CntBackendPlugin\\Tests\\": "tests/"
+        }
+    }
+}
