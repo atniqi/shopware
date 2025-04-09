@@ -6,12 +6,8 @@
 
     <services>
 
-        <service id="CntBackendPlugin\Command\GreetCommand">
-            <tag name="console.command"/>
-        </service>
-
-        <service id="CntBackendPlugin\Subscriber\LogOrderNumber">
-                <tag name="kernel.event_subscriber"/>
+        <service id="CntBackendPlugin\Core\Content\Example\SalesChannel\ExampleRoute">
+            <argument type="service" id="product.repository"/>
         </service>
 
     </services>
