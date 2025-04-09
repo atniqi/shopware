@@ -1,0 +1,59 @@
+/*
+Override variable defaults
+==================================================
+This file is used to override default SCSS variables from the Shopware Storefront or Bootstrap.
+
+Because of the !default flags, theme variable overrides have to be declared beforehand.
+https://getbootstrap.com/docs/5.3/customize/sass/#variable-defaults
+*/
+
+$teal: #10FFB4;
+
+
+@mixin textStyles($size: 17px, $weight: 500, $color: black, $letterSpacing: normal) {
+
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    letter-spacing: $letterSpacing;
+
+}
+
+
+.header-main {
+    background-color: #cfc9c9;
+}
+
+
+.product-detail-form-container {
+    .btn-buy {
+        @include textStyles(15px, 400, #000, 1.2);
+        background-color: $teal;
+        transition: .2s ease-in-out;
+        border-left: 3px transparent solid;
+        border-right: 3px transparent solid;
+
+        &:hover {
+            color: $teal;
+            background-color: black;
+            border-left: $teal 3px solid;
+            border-right: $teal 3px solid;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    .product-box {
+        .product-image-wrapper {
+            transition: .3s ease-in-out;
+            &:hover {
+                box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+                transform:scale(1.1);
+            }
+        }
+    }
+
+}

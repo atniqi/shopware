@@ -1,0 +1,18 @@
+{
+  "name": "swag/theme-skeleton",
+  "description": "Theme skeleton plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "CntAwesome\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "CntAwesome\\CntAwesome",
+    "label": {
+      "de-DE": "Theme CntAwesome plugin",
+      "en-GB": "Theme CntAwesome plugin"
+    }
+  }
+}
